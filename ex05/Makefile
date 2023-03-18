@@ -1,6 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/03/18 06:21:47 by iamongeo          #+#    #+#              #
+#    Updated: 2023/03/18 06:22:00 by iamongeo         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRCS	=	main.cpp
 
-CLS		=	Harl.cpp
+CLS	=	Harl.cpp
 
 OBJS	=	$(SRCS:.cpp=.o) $(CLS:.cpp=.o)
 
@@ -19,9 +31,9 @@ $(NAME):	$(OBJS)
 all:	$(NAME)
 
 clean:
-	rm $(OBJS)
+	rm -f $(OBJS)
 
 fclean:	clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re:	fclean all

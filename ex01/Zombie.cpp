@@ -6,26 +6,25 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 22:46:03 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 00:18:34 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 04:57:45 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
 #include "Zombie.hpp"
 
-Zombie::Zombie( void ) {}
+Zombie::Zombie(void) {}
 
-Zombie::~Zombie(void){
-    std::cout << this->_name << " dies a meaningless death." << std::endl;
+Zombie::~Zombie(void)
+{
+	std::cout << this->_name << " dies a meaningless death." << std::endl;
 }
 
-void    Zombie::setName(std::string& name)
+void	Zombie::setName(std::string& name)
 {
-    this->_name = name;
+	this->_name = name;
 }
 
-void    Zombie::annonce(void)
+void	Zombie::annonce(void)
 {
-    std::cout << "hello" << std::endl;
-    //std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }

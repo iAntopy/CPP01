@@ -6,13 +6,14 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/16 22:43:17 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/16 23:55:45 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 04:58:04 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef __ZOMBIE_HPP__
 # define __ZOMBIE_HPP__
 
+# include <iostream>
 # include <string>
 
 class Zombie

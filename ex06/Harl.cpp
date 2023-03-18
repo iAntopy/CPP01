@@ -6,7 +6,7 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 21:04:53 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/18 23:43:38 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 06:36:35 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 #include "Harl.hpp"
 
 Harl::Harl(std::string const& filter) {
-	_complainers[0] = &Harl::debug;
-	_complainers[1] = &Harl::info;
-	_complainers[2] = &Harl::warning;
-	_complainers[3] = &Harl::error;
+//	_complainers[0] = &Harl::debug;
+//	_complainers[1] = &Harl::info;
+//	_complainers[2] = &Harl::warning;
+//	_complainers[3] = &Harl::error;
 	_ids[0] = "DEBUG";
 	_ids[1] = "INFO";
 	_ids[2] = "WARNING";
@@ -56,7 +56,7 @@ void    Harl::error(void)
 	std::cout << "This is unacceptable ! I want to speak to the manager now." << std::endl << std::endl;
 }
 
-void    Harl::complain(std::string level)
+void    Harl::complain(void)
 {
 	switch (_filterIndex)
 	{

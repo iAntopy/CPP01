@@ -6,7 +6,7 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 20:26:59 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 21:37:46 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 06:26:52 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,10 @@
 
 class Harl
 {
-	typedef void (Harl::*memFunc_p)(void);
-	
 	private:
+		
+		typedef void (Harl::*memFunc_p)(void);
+		
 		void	debug(void);
 		void	info(void);
 		void	warning(void);

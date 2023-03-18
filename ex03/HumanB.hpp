@@ -6,10 +6,9 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 00:55:25 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 18:53:55 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 05:39:27 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef __HUMAN_B_HPP__
 # define __HUMAN_B_HPP__
@@ -23,11 +22,11 @@ class HumanB
 		Weapon*				_weapon;
 		
 	public:
-		HumanB(std::string const&	name);
+		HumanB(std::string const& name);
 		~HumanB();
 		
-		void	setWeapon(Weapon&	weapon);
-		void	attack(void);
+		void	setWeapon(Weapon* weapon);
+		void	attack(void) const;
 };
 
 #endif

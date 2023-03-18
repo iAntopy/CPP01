@@ -6,10 +6,9 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 00:49:24 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 17:05:40 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 05:18:42 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef __WEAPON_HPP__
 # define __WEAPON_HPP__
@@ -25,8 +24,8 @@ class Weapon
 		Weapon(std::string const& type);
 		~Weapon(void);
 
-		std::string const&	getType(void);
-		void				setType(std::string const& type);
+		std::string const&	getType(void)	const;
+		void			setType(std::string const& type);
 };
 
 #endif

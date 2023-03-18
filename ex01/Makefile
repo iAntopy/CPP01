@@ -1,6 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/03/18 04:47:31 by iamongeo          #+#    #+#              #
+#    Updated: 2023/03/18 04:48:05 by iamongeo         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRCS	=	main.cpp zombieHorde.cpp
 
-CLS		=	Zombie.cpp
+CLS	=	Zombie.cpp
 
 OBJS	=	$(SRCS:.cpp=.o) $(CLS:.cpp=.o)
 
@@ -19,9 +31,9 @@ $(NAME):	$(OBJS)
 all:	$(NAME)
 
 clean:
-	rm $(OBJS)
+	rm -f $(OBJS)
 
 fclean:	clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re:	fclean all

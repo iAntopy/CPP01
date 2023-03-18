@@ -6,7 +6,7 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 18:56:17 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 20:22:05 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 05:49:35 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ int	main(int argc, char **argv)
 	if (argc != 4)
 	{
 		std::cerr << "ERROR :: Wrong nb of arguments.";
-		std::cerr << " Provide a filename, a string to replace in the file and its replacement string" << std::endl;
+		std::cerr << " Provide a filename, a string sequence to replace in the file and its replacement string" << std::endl;
 		return (EXIT_FAILURE);
 	}
 	filename = argv[1];

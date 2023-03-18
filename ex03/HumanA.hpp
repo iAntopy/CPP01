@@ -6,7 +6,7 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 00:55:25 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 18:42:20 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/18 05:24:57 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ class HumanA
 		HumanA(std::string const& name, Weapon& weapon);
 		~HumanA();
 		
-		void    attack(void);
+		void    attack(void) const;
 };
 
 #endif
