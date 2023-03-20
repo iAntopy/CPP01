@@ -6,7 +6,7 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 01:12:01 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/03/18 05:39:45 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/20 15:40:02 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,11 +27,13 @@ int main()
 	{
 		Weapon club = Weapon("crude spiked club");
 		HumanB jim("Jim");
-		jim.setWeapon(&club);
+		jim.setWeapon(club);
 		jim.attack();
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	std::cout << std::endl << "Extra Test : ";
+	std::cout << "Create HumanB with NULL weapon and attack :" << std::endl;
 	HumanB	phoebe("Phoebe");
 	phoebe.attack();
 	return 0;

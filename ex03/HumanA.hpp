@@ -6,7 +6,7 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 00:55:25 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/03/18 05:24:57 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/20 15:32:39 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #ifndef __HUMAN_A_HPP__
 # define __HUMAN_A_HPP__
 
+#include <iostream>
 #include "Weapon.hpp"
 
 class HumanA

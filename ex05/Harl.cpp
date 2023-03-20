@@ -6,14 +6,15 @@
 /*   By: iamongeo <iamongeo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/17 21:04:53 by iamongeo          #+#    #+#             */
-/*   Updated: 2023/02/17 21:55:11 by iamongeo         ###   ########.fr       */
+/*   Updated: 2023/03/20 18:13:25 by iamongeo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include "Harl.hpp"
 
-Harl::Harl(void) {
+Harl::Harl(void)
+{
     _complainers[0] = &Harl::debug;
     _complainers[1] = &Harl::info;
     _complainers[2] = &Harl::warning;
